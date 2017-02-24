@@ -15,30 +15,39 @@
       <div class="container-fluid">
 
         <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+
           <h1>
             <a class="navbar-brand" href="#">
               <img class="img-logo" src="assets/images/logo.jpg" alt="Produto 01">
             </a>
           </h1>
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+         <div class="search-input-mobile">
+         	<div class="search-input-container-mobile">
+        		<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        		<input type="text" name="search-input">
+        	</div>
+         	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+         </div>
+         
         </div>
         
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
+        	<div class="search-input-container">
+        		<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        		<input type="text" name="search-input">
+        	</div>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
           </ul>
           
         </div>
@@ -50,48 +59,99 @@
       <div class="row">
 
         <div class="col-xs-12 col-md-2 sidebar-nav-principal">
-          <div class="nav">
+          <nav class="nav-sidebar">
             <ul>
-              <li>Jackets</li>
-              <li>Skirts</li>
+              <li><a href=""> Jackets</a></li>
+              <li><a href=""> Skirts</a></li>
+              <li><a href=""> Shoes</a></li>
+              <li><a href=""> T-Shirts</a></li>
+              <li><a href=""> Shirts</a></li>
+              <li><a href=""> Jeans</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
 
-        <div class="col-xs-8 col-md-10">
+        <div class="col-xs-12 col-md-10">
           <div class="row">
-            <div class="product-image-container col-xs-12 col-md-8">
-              <img class="product-image"  src="assets/images/product1.jpg">
+            <div class="col-xs-12 col-md-8 product-image-container">
+              <img class="product-image"  src="assets/images/products/product1.jpg" alt="Produto 1">
             </div>  
             <div class="col-xs-12 col-md-4">
               <div class="product-description">
-                <h3>Produto 01</h3>
+                <h3>Produto <span class="product-element-color">Azul</span></h3>
                 <p>Descrição do produto</p>  
               </div>
 
               <div class="product-actions">
                 <div class="row">
-                  <div class="col-xs-6 col-md-6">
-                    <div clas="product-colors-container">
+                  <div class="col-xs-8 col-md-6 product-colors-container">
                       <div class="product-color procut-color-0"></div>
                       <div class="product-color procut-color-1 active-color"></div>
                       <div class="product-color procut-color-2"></div>
-                    </div>
                   </div>
-                  <div class="col-xs-6 col-md-6">
+                  <div class="col-xs-2 col-md-6">
                     <select class="product-quantity">
                       <option value="1">1</option>
                       <option value="2">2</option>
                     </select>
                   </div>
-                </div>  
+                </div>
+
+                <div class="row buttons-container">
+                	<div class="col-xs-12 col-md-12 product-btn-buy">
+                		<button class="button btn-buy">BUY NOW 29.99$</button>
+                	</div>
+                	<div class="col-xs-12 col-md-12 product-btn-add">
+                		<button class="button btn-add">Add to the shopping cart</button>
+                	</div>
+                </div>
               </div>
               
             </div>  
-          </div>  
+
+            <div class="col-xs-12 col-md-12">
+          		<div class="product-description-mobile">
+            		<h3>Produto <span class="product-element-color">Azul</span></h3>
+            		<p>Descrição do produto</p>  
+          		</div>
+          		<hr />
+          	</div>
+          </div>
+
           <div class="row">
             <div class="col-xs-12 col-md-12">
-              REcomendados
+            	<h4>Related itens:</h4>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+            	<div class="related-iten-container">
+            		<a href="#" class="related-iten-link">
+            		<img class="related-iten-image" src="assets/images/products/product2.jpg" alt="Produto 2" alt="Produto X">
+            		<div class="related-iten-desc">
+            			<p> Shoe <span>15.99$</span> </p>
+            		</div>
+            		</a>
+            	</div>  
+            </div>
+            <div class="col-xs-12 col-md-4">
+            	<div class="related-iten-container">
+            		<a href="#" class="related-iten-link">
+            		<img class="related-iten-image" src="assets/images/products/product2.jpg" alt="Produto 2" alt="Produto X">
+            		<div class="related-iten-desc">
+            			<p> Shoe <span>15.99$</span> </p>
+            		</div>
+            		</a>
+            	</div>  
+            </div>
+            <div class="col-xs-12 col-md-4">
+            	<div class="related-iten-container">
+            		<a href="#" class="related-iten-link">
+            		<img class="related-iten-image" src="assets/images/products/product2.jpg" alt="Produto 2" alt="Produto X">
+            		<div class="related-iten-desc">
+            			<p> Shoe <span>15.99$</span> </p>
+            		</div>
+            		</a>
+            	</div>  
             </div>
           </div>
 
